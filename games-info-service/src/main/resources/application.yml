@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: games-info-service
+
+server:
+  port: 8084

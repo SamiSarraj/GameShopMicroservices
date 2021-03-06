@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: games-rating-service
+
+server:
+  port: 8085
