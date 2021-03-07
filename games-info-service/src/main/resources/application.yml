@@ -1,6 +1,9 @@
 spring:
   application:
     name: games-info-service
+  datasource:
+    url: jdbc:h2:mem:testdb
 
 server:
   port: 8084
+
