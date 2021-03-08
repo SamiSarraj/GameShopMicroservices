@@ -13,4 +13,10 @@ public class GamesInfo {
     private String name;
     private String desc;
     private LocalDate releaseDate;
+
+    public void notAvailableGameInfo() {
+        this.name = "NotAvialable";
+        this.desc = "NotAvailable";
+        this.releaseDate = LocalDate.of(1994,12,6);
+    }
 }

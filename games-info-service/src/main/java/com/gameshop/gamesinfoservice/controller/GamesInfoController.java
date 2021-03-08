@@ -21,7 +21,7 @@ public class GamesInfoController {
     @GetMapping(value = "/{name}")
     @ResponseStatus(HttpStatus.OK)
     public Optional<GamesInfo> getGameInfo(@PathVariable String name) {
-        return gamesInfoService.getGameInfo(name);
+        return Optional.ofNullable(gamesInfoService.getGameInfo(name));
     }
 
 }

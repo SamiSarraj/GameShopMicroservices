@@ -1,6 +1,7 @@
 package com.gameshop.gamesratingservice.controller;
 
 import com.gameshop.gamesratingservice.domain.Rating;
+import com.gameshop.gamesratingservice.domain.UserRatings;
 import com.gameshop.gamesratingservice.service.GamesRatingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -19,7 +20,7 @@ public class GamesRatingController {
     }
 @GetMapping("/{username}")
 @ResponseStatus(HttpStatus.OK)
-public List<Optional<Rating>> getUserRatings(@PathVariable String username) {
+public Optional<UserRatings> getUserRatings(@PathVariable String username) {
     return gamesRatingService.getAllUserRatings(username);
 }
 }

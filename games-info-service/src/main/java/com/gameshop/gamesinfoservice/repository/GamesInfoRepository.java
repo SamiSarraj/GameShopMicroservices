@@ -8,5 +8,5 @@ import java.util.Optional;
 
 @Repository
 public interface GamesInfoRepository extends CrudRepository<GamesInfo, Long> {
-    Optional<GamesInfo> findGamesInfoByName(String name);
+    GamesInfo findGamesInfoByName(String name);
 }

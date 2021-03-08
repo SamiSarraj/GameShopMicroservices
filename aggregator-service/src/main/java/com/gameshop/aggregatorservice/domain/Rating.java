@@ -15,4 +15,9 @@ public class Rating {
     private String movieName;
     @NotEmpty(message = "Rating cant be empty!")
     private Integer rating;
+    public void notAvailableRating() {
+        this.username = "Not Available";
+        this.movieName = "Not Available";
+        this.rating = 0;
+    }
 }

@@ -1,5 +1,6 @@
 package com.gameshop.userservice.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.NonNull;
@@ -15,6 +16,7 @@ public class User {
     @GeneratedValue
     private Long id;
     @NotNull
+    @Column(unique = true)
     private String username;
     @OneToOne
     @JoinColumn(name = "userInformation_id")

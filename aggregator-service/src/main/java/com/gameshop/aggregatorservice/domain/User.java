@@ -11,4 +11,8 @@ public class User {
     @NotNull
     private String username;
     private UserInformation userInformation;
+    public void notAvailableUser() {
+        this.username = "Not Available";
+        this.userInformation = null;
+    }
 }

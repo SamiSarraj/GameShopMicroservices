@@ -14,6 +14,5 @@ public class UserInformation {
     private LocalDate birthday;
     //@Email(message = "Email cant be empty!")
     private String email;
-    private User user;
 
 }
